@@ -366,7 +366,7 @@ impl<T> fmt::Debug for Sender<T> {
 /// # smol::run(async {
 /// let (s, r) = piper::chan(100);
 ///
-/// let t = Task::spawn((async move {
+/// let t = Task::spawn(async move {
 ///     s.send(1).await;
 ///     Timer::after(Duration::from_secs(1)).await;
 ///     s.send(2).await;

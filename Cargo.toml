@@ -14,5 +14,6 @@ futures-io = { version = "0.3.5", default-features = false, features = ["std"] }
 futures-util = { version = "0.3.5", default-features = false, features = ["std"] }
 
 [dev-dependencies]
-smol = { git = "https://github.com/stjepang/smol.git" }
+async-std = { version = "1.5.0", features = ["unstable"] }
 futures = { version = "0.3.4", default-features = false, features = ["std"] }
+smol = { git = "https://github.com/stjepang/smol.git" }
